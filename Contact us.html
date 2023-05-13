@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <title>Contact Us</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@700&display=swap"
+    rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Global styles */
+    body {
+      font-family: 'Bebas Neue', sans-serif;
+      font-family: 'Dancing Script', cursive;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #333;
+      background-color: #f7f7f7;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+
+    }
+
+    /* Header */
+    header {
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      position: fixed;
+      top: 0;
+      left: 0;
+      margin-left: 10%;
+      margin-top: 2%;
+      width: 80%;
+      z-index: 1;
+      background-color: #FF5A5F;
+      border-radius: 3px 6px 3px 12px;
+      opacity: 0.8;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px;
+
+
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 700;
+      color: white;
+      text-decoration: none;
+    }
+
+    .nav-links {
+      list-style: none;
+
+    }
+
+    .nav-links li {
+      display: inline-block;
+      margin-left: 40px;
+
+
+    }
+
+    .nav-links li:first-child {
+      margin-left: 0;
+    }
+
+    .nav-links li a {
+      font-size: 22px;
+      font-weight: 500;
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+
+
+    }
+
+    .nav-links li a:hover {
+      color: #5a5a5a;
+    }
+
+    /* Hero section */
+    .hero {
+      background-image: url('https://wallpapers.com/images/high/travel-background-e5aflgecbyajpeyl.webp');
+      background-size: cover;
+      background-position: center;
+      height: 500px;
+      position: relative;
+
+    }
+
+    .hero:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      color: #fff;
+    }
+
+    .hero-content h1 {
+      font-size: 64px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .hero-content p {
+      font-size: 24px;
+      font-weight: 500;
+    }
+
+    /* Contact section */
+    .contact {
+      padding: 80px 0;
+      background: linear-gradient(to bottom, #6190E8, #A7BFE8);
+    }
+
+    .contact h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 40px;
+      text-align: center;
+    }
+
+    form {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.8);
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #f3f3f3;
+      font-size: 16px;
+      font-weight: 500;
+      color: #333;
+      resize: none;
+    }
+
+    textarea {
+      height: 150px;
+    }
+
+    button[type="submit"] {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #333;
+      color: #fff;
+      font-size: 18px;
+      font-weight: 500;
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #5a5a5a;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 40px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .footer-content p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .social-icons {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .social-icons li {
+      margin: 0 10px;
+    }
+
+    .social-icons li a {
+      color: #fff;
+      font-size: 24px;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons li a:hover {
+      color: #f7f7f7;
+    }
+  </style>
+
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Wandering india</a>
+        <ul class="nav-links">
+          <li><a href="Home1.html">Home</a></li>
+          <li><a href="About%20us.html">
+              About Us</a></li>
+          <li><a href="Contact us.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Contact Us</h1>
+        <p> </p>
+      </div>
+    </div>
+  </div>
+
+  <section class="contact">
+    <div class="container">
+      <h2>connect with us</h2>
+      <form>
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Wandering india</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
